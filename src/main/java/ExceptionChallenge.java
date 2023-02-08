@@ -1,4 +1,7 @@
-public class ExceptionChallenge {
+import java.io.FileNotFoundException;
+
+public class ExceptionChallenge 
+{
     /**
      * An exception is an unexpected event that occurs during our program.
      * Most likely, you have already encountered an Exception (ArrayIndexOutOfBounds, etc).
@@ -20,6 +23,18 @@ public class ExceptionChallenge {
      *
      * Check out this guide on throwing exceptions: https://rollbar.com/guides/java/how-to-throw-exceptions-in-java/#
      */
-    public void mustThrow(){
+    public void mustThrow() throws Exception
+    {
+        
+        int a = 0;
+
+        if (a < 1)
+        {
+            throw new Exception();
+        }
+        else{
+            
+        }
+
     }
 }
